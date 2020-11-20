@@ -1,0 +1,88 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Student Survey.txt",
+				"container": "cn4"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Survey ID",
+				"type": "String"
+			},
+			{
+				"name": "Store Number",
+				"type": "String"
+			},
+			{
+				"name": "Store Location",
+				"type": "String"
+			},
+			{
+				"name": "Store Setting",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Exchange",
+				"type": "String"
+			},
+			{
+				"name": "Survey Date ",
+				"type": "String"
+			},
+			{
+				"name": "VideoGames",
+				"type": "String"
+			},
+			{
+				"name": "Academic Books",
+				"type": "String"
+			},
+			{
+				"name": "Toys",
+				"type": "String"
+			},
+			{
+				"name": "OutDoor SportKits",
+				"type": "String"
+			},
+			{
+				"name": "InDoor SportKits",
+				"type": "String"
+			},
+			{
+				"name": "Gadgets",
+				"type": "String"
+			},
+			{
+				"name": "NonAcademic Books",
+				"type": "String"
+			},
+			{
+				"name": "Number of Items Purchased",
+				"type": "String"
+			},
+			{
+				"name": "Total Amount of Purchases",
+				"type": "String"
+			}
+		]
+	}
+}
